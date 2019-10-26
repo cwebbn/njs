@@ -1,12 +1,35 @@
 {
   "name": "njs",
   "version": "1.0.0",
-  "description": "",
+  "description": "CLI for create AngularJs app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch":"gulp"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "AngularJs",
+    "Javascript"
+  ],
+  "author": "Wébert . Charles",
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/rest": "^16.34.0",
+    "chalk": "^2.4.2",
+    "clear": "^0.1.0",
+    "clui": "^0.3.6",
+    "configstore": "^5.0.0",
+    "figlet": "^1.2.4",
+    "inquirer": "^7.0.0",
+    "lodash": "^4.17.15",
+    "minimist": "^1.2.0",
+    "simple-git": "^1.126.0",
+    "touch": "^3.1.0"
+  },
+  "bin": {
+    "njs": "./bin/cli.js"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
 }
